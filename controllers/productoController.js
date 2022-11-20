@@ -37,7 +37,7 @@ const borrarProducto = async(req, res) => {
         const porducto=await Producto.findByIdAndDelete(req.params.id);
         res.json({msg: "Producto eliminado", producto})
     } catch (error) {
-        consle.log(error.message);
+        console.log(error.message);
     }
 } 
 
